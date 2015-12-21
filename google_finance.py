@@ -47,7 +47,6 @@ class GoogleFinance:
         # Connect to URL and download data
             url_data = urllib.request.urlopen(url_str)
             csv = (url_data.read()).decode("utf-8-sig").encode("utf-8")
-            print("type csv: " + type(csv))
         except:
             message = "Failed to connect to URL"
             logging.error(message)
